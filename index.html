@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="music-container" id="music-container">
+      <div class="title">
+        <h1 id="music-title"></h1>
+      </div>
+      <div class="music_img">
+        <img src="" alt="music-image" id="music-img" />
+      </div>
+      <audio src="" id="audio"></audio>
+      <div class="progress-container">
+        <div id="progress"></div>
+      </div>
+      <div class="buttons">
+        <button type="button" id="prew">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button
+          type="button"
+          class="play"
+          id="play"
+          style="background-color: blue"
+        >
+          <i class="fa-solid fa-play" style="color: white"></i>
+        </button>
+        <button
+          type="button"
+          class="pause"
+          id="pause"
+          style="background-color: blue"
+        >
+          <i class="fa-solid fa-pause" style="color: white"></i>
+        </button>
+        <button type="button" id="next">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <div>
+      <h1 id="by">
+        by
+        <a href="#" id="by-href">Sardorbek Olimov</a>
+      </h1>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
